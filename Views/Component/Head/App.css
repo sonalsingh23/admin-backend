@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1400px) {
+  .txtd{
+    text-decoration: none;
+    color: gray;
+    padding: 3vw;
+  
+  }
+  .shop{
+    width: 8em;
+    height: 3em;
+    margin-left: 2vw;
+    text-align: center;
+    padding-top: 1em;
+    text-decoration-style: solid;
+    font-size: 2vw;
+    font-weight: bold;
+    text-overflow: inherit;
+
+    background-color: #f5f5f5;
+  }
+  .link{
+  
+    margin-left: 60vw;
+  
+    width: 3vw;
+    height: 10vh;
+    padding: 1vh;
+    
+    margin-top: -8vh;
+    
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .txtd{
+    text-decoration: none;
+    color: gray;
+    padding: 3vw;
+    font-size: 1.5vw;
+  
+  }
+  .shop{
+    width: 8em;
+    height: 3em;
+    margin-left: 2vw;
+    text-align: center;
+    padding-top: 1em;
+    text-decoration-style: solid;
+    font-size: 2vw;
+    font-weight: bold;
+    text-overflow: inherit;
+
+    background-color: #f5f5f5;
+  }
+  .link{
+     margin-left: 60vw;
+  
+    width: 3vw;
+    height: 10vh;
+    padding: 1vh;
+    
+    margin-top: -8vh;
+    
+  }
+}
+@media only screen and (max-width: 700px) {
+  .txtd{
+    text-decoration: none;
+    color: gray;
+    padding: 3vw;
+    font-size: 2vw;
+  
+  }
+  .shop{
+    width: 8em;
+    height: 3em;
+    margin-left: 2vw;
+    text-align: center;
+    padding-top: 1em;
+    text-decoration-style: solid;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-overflow: inherit;
+
+    background-color: #f5f5f5;
+  }
+  .link{
+     margin-left: 55vw;
+  
+    width: 3vw;
+    height: 10vh;
+    padding: 1vh;
+    
+    margin-top: -5vh;
+    
+  }
+}
+@media only screen and (max-width: 480px) {
+  .txtd{
+    text-decoration: none;
+    color: gray;
+    padding: 3vw;
+    font-size: 4vw;
+  
+  }
+  .shop{
+    width: 8em;
+    height: 3em;
+    margin-left: 2vw;
+    text-align: center;
+    padding-top: 1em;
+    text-decoration-style: solid;
+    font-size: 4vw;
+    font-weight: bold;
+    text-overflow: inherit;
+
+    background-color: #f5f5f5;
+  }
+  .link{
+  
+    margin-left: 25vw;
+  
+    width: 3vw;
+    height: 10vh;
+    padding: 1vh;
+    
+    margin-top: -8vh;
+    
+  }
+}
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
