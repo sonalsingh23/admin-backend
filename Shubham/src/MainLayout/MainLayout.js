@@ -1,8 +1,22 @@
 import React, { useState,useEffect } from 'react';
-import CitySelect from './CitySelect';
-import TempDisplay from './TempDisplay';
-import axios from 'axios';
-  function MainLayout(){
+import CitySelect from '../CitySelect/CitySelect';
+import TempDisplay from '../TempDisplay/TempDisplay';
+import { useSelector, useDispatch } from 'react-redux';
+import './App.css';
+
+import { loadposts } from "../store/posts";
+//import { useEffect } from "react";
+
+const MainLayout = () => {
+    const dispatch = useDispatch();
+    const posts = useSelector((state) => state.list);
+
+    useEffect(() => {
+        dispatch(loadposts());
+    }, [dispatch]);
+{/*import axios from 'axios';
+const MainLayout = () =>{
+  const myState = useSelector((state) => state.res)
     const [wheather, setWheather ]= useState({});
     const [filedatas, setFileDatas] = useState({});
     useEffect(() => {
@@ -17,7 +31,7 @@ import axios from 'axios';
    setFileDatas(result.data)  
 }; 
    /* call api to get data*/ 
-   /* save data */
+   /* save data */}
   
  
   return (
@@ -30,12 +44,13 @@ import axios from 'axios';
 </div>
 
 <CitySelect onChange={onCityChange}/> 
+
 <div>
 
 <button type="submit" className="btn" onClick={onCityChange}>Search</button>
 </div>
  <TempDisplay wheather={wheather}/>
-z
+
 </div>
 
 

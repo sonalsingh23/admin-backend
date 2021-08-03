@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import MainLayout from './MainLayout';
+import MainLayout from '../MainLayout/MainLayout';
 
   class App extends React.Component{
     render() 
