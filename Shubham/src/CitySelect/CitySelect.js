@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
     const CitySelect =({onChange})  =>
     {
     const [cityState,setCityState] = useState(""); 
@@ -9,7 +8,7 @@ import './App.css';
 <select className="drop" onChange={(e)=>{
   const selectedCity = e.target.value;
   setCityState(selectedCity);
- dispatch(loadcity);
+ onChange(selectedCity);
 }
 }>
   <option value="delhi" className="drop">delhi</option>

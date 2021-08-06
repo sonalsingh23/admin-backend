@@ -1,0 +1,62 @@
+.App {
+  width: 650px;
+  height: 400px;
+  text-align: center;
+  border: 1px solid silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:#4472c4;
+}
+.App2{
+  width: 550px;
+  height: 300px; 
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 1px solid silver;
+  background-color: white;
+}
+.Header{
+  width: 530px;
+  height: 50px; 
+  margin-top: 2px;
+  margin-left:10px ;
+  
+  border: 1px solid silver;
+}
+h3{
+  color: gray;
+}
+.btn{
+  width: 140px;
+  height: 40px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 60px;
+  border-radius:5px;
+  background-color: #c5e0b4;
+}
+.city{
+  width: 300px;
+  height: 40px; 
+  
+  margin-left: 375px;
+  margin-top: -300px;
+  border-radius:5px;
+}
+.drop{
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius:10px;
+  background-color: #fbe5d6;
+}
+.display{
+  width: 400px;
+  height: 90px; 
+  border: 1px solid silver;
+  margin-left: 90px;
+  margin-top: 75px;
+}
+
+
