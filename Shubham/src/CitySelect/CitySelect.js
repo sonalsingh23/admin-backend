@@ -9,7 +9,7 @@ import './App.css';
 <select className="drop" onChange={(e)=>{
   const selectedCity = e.target.value;
   setCityState(selectedCity);
- onChange(selectedCity);
+ dispatch(loadcity);
 }
 }>
   <option value="delhi" className="drop">delhi</option>

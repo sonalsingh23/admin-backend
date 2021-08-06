@@ -9,12 +9,12 @@ import { loadposts } from "../store/posts";
 
 const MainLayout = () => {
     const dispatch = useDispatch();
-    const posts = useSelector((state) => state.list);
+    const city = useSelector((state) => state.city);
 
     useEffect(() => {
         dispatch(loadposts());
-    }, [dispatch]);
-{/*import axios from 'axios';
+    }, [city]);
+import axios from 'axios';
 const MainLayout = () =>{
   const myState = useSelector((state) => state.res)
     const [wheather, setWheather ]= useState({});
@@ -31,7 +31,7 @@ const MainLayout = () =>{
    setFileDatas(result.data)  
 }; 
    /* call api to get data*/ 
-   /* save data */}
+   /* save data */
   
  
   return (
