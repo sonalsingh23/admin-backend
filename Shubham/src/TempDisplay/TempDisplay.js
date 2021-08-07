@@ -1,21 +1,17 @@
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+
+const wheatherData = {"location":{"name":"Delhi","region":"Delhi","country":"India","lat":28.67,"lon":77.22,"tz_id":"Asia/Kolkata","localtime_epoch":1628353229,"localtime":"2021-08-07 21:50"},"current":{"last_updated_epoch":1628352900,"last_updated":"2021-08-07 21:45","temp_c":28.0,"temp_f":82.4,"is_day":0,"condition":{"text":"Mist","icon":"//cdn.weatherapi.com/weather/64x64/night/143.png","code":1030},"wind_mph":0.0,"wind_kph":0.0,"wind_degree":0,"wind_dir":"N","pressure_mb":1004.0,"pressure_in":29.65,"precip_mm":0.0,"precip_in":0.0,"humidity":89,"cloud":75,"feelslike_c":28.6,"feelslike_f":83.4,"vis_km":3.5,"vis_miles":2.0,"uv":9.0,"gust_mph":1.8,"gust_kph":2.9}};
 const TempDisplay  =(props) =>{
-  const [filedata, setFileData] = useState({});
-  useEffect(() => {
-    const GetData = async () => {
-        const result = await axios(
-             'http://api.weatherapi.com/v1/current.json?key=d35adc0e36cd4b09b1591010211007&q=Delhi',   
-        );
-        console.log(result.data);
-        setFileData(result.data)  
-    };
-    GetData();  
-}, []);
+  
+ 
+
+ 
   return (
     <div className="display"> 
-   {filedata && filedata.name} 
+  <spam>Date: {wheatherData.location.name}</spam><br />
+   <spam>Time: {wheatherData.location.localtime}</spam><br />
+  <spam>Temperature: {wheatherData.location.lat}</spam> <br />
     </div>
   );
     }

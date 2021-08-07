@@ -5,17 +5,18 @@ import React, { useState } from 'react';
   return (
     <div >
 
-<select className="drop" onChange={(e)=>{
-  const selectedCity = e.target.value;
-  setCityState(selectedCity);
- onChange(selectedCity);
+<select className="drop" value={cityState} onChange={(e)=>{
+  setCityState(e.target.value);
+
 }
 }>
   <option value="delhi" className="drop">delhi</option>
+  <option value="mumbai" className="drop">mumbai</option>
+  <option value="jalandHar" className="drop">jalandhar</option>
 
 </select>
 
-{cityState}
+
 
     </div>
   );
