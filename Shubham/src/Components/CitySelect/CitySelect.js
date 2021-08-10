@@ -17,13 +17,13 @@ const CitySelect = () => {
                     onChange(selectedCity);
                 }}
             >
-                <option value="delhi" className="drop">
+                <option value="delhi" >
                     Delhi
                 </option>
-                <option value="lucknow" className="drop">
+                <option value="lucknow" >
                     Lucknow
                 </option>
-                <option value="patna" className="drop">
+                <option value="patna" >
                     Patna
                 </option>
             </select>

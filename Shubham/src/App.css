@@ -48,7 +48,7 @@ h3{
   height: 40px;
   margin-top: 30px;
   margin-left: 30px;
-  border-radius:10px;
+  border-radius:6px;
   background-color: #fbe5d6;
 }
 .display{
@@ -57,6 +57,24 @@ h3{
   border: 1px solid silver;
   margin-left: 90px;
   margin-top: 75px;
+}
+.dte{
+  margin-left: -15vw;
+}
+.sp{
+  margin-left: 10vw;
+}
+.tme{
+  margin-left: -9.5vw;
+}
+.tm{
+  margin-left: 8vw;
+}
+.tpr{
+margin-left: -15vw;
+}
+.tp{
+margin-left:5vw ;
 }
 
 
