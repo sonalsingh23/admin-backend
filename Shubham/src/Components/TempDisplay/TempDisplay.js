@@ -19,4 +19,3 @@ const TempDisplay  =(props) =>{
   );
     }
     export default TempDisplay;
-
