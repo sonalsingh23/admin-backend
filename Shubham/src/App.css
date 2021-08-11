@@ -52,11 +52,8 @@ h3{
   background-color: #fbe5d6;
 }
 .display{
-  width: 400px;
-  height: 90px; 
   border: 1px solid silver;
-  margin-left: 90px;
-  margin-top: 75px;
+  margin: 75px 60px 20px 90px;
 }
 .dte{
   margin-left: -15vw;

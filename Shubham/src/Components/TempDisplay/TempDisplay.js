@@ -6,15 +6,15 @@ import { saveWeatherData } from '../../store/weatherSlice';
 const TempDisplay  =(props) =>{
   
   const { weatherData } = useSelector((state) => state.weather);
- 
+
   return (
     <div className="display"> 
     <spam className="dte">City:</spam>
-    <spam className="sp">{wheatherData.location.name}</spam><br />
+    <spam className="sp">{weatherData && weatherData.location && weatherData.location.name}</spam><br />
     <spam className="tme">Time:</spam>  
-    <spam className="tm">{wheatherData.location.localtime}</spam><br />
+    <spam className="tm">{weatherData && weatherData.location && weatherData.location.localtime}</spam><br />
     <spam className="tpr">Temperature: </spam>
-    <spam className="tp">{wheatherData.location.lat} </spam> <br />
+    <spam className="tp">{weatherData && weatherData.location && weatherData.location.lat} </spam> <br />
       </div>
   );
     }
