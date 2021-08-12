@@ -9,13 +9,20 @@ const TempDisplay  =(props) =>{
 
   return (
     <div className="display"> 
-    <spam className="dte">City:</spam>
-    <spam className="sp">{weatherData && weatherData.location && weatherData.location.name}</spam><br />
-    <spam className="tme">Time:</spam>  
-    <spam className="tm">{weatherData && weatherData.location && weatherData.location.localtime}</spam><br />
-    <spam className="tpr">Temperature: </spam>
-    <spam className="tp">{weatherData && weatherData.location && weatherData.location.lat} </spam> <br />
+   <div>
+   <label className="dte"> City:</label>
+   <span> {weatherData && weatherData.location && weatherData.location.name}</span>
+    </div>
+    <div>
+   <label className="tme">  Time:</label> 
+    <span >  {weatherData && weatherData.location && weatherData.location.localtime}</span>
+    </div>
+    <div>
+    <label className="tpr"> Temperature:  </label>
+    <span> {weatherData && weatherData.location && weatherData.location.lat}</span>
+    </div>
       </div>
   );
     }
     export default TempDisplay;
+
