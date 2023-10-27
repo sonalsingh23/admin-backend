@@ -1,0 +1,39 @@
+.update {
+    box-sizing: border-box;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    color: #7890a1;
+    color: var(--token-2a633678-f86b-4ab5-94be-ee4f65254cde,#7890a1);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    background-color: #10142c;
+    border: 0 solid #23354d;
+    border-color: var(--token-e2079bf0-f281-429e-90ac-e5958a3c1a75,#23354d);
+    border-bottom: 1px solid var(--token-e2079bf0-f281-429e-90ac-e5958a3c1a75,#23354d);
+}
+.upadteimg{
+    width: 24px;
+    font-size: 18px;
+   
+}
+.textt{
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-family: "Inter",sans-serif;
+    color: #96a8b6;
+    color: var(--token-2a633678-f86b-4ab5-94be-ee4f65254cde,#96a8b6);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 1.2; 
+    text-transform: capitalize;
+}
+
+.textt {
+    text-align: left;
+}

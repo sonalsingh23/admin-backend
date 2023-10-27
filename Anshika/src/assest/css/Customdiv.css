@@ -1,0 +1,12 @@
+.customdivs{
+    text-align: center;
+    margin-left: auto;
+    color: #fff;
+    font-size: 17px;
+    background-color: #fa0043;
+    border: none;
+    padding: 7px;
+}
+div.customdivs.tournament-more {
+    padding: 3px !important; 
+}

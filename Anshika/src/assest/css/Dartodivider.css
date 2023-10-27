@@ -1,0 +1,39 @@
+.contanier1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #23354d;
+    margin: auto;
+}
+.firstdiv,.seconddiv{
+    width: 50%;
+    height: 100%;
+    background-color: #23354d;
+    margin: auto;
+}
+.text{
+    color: var(--white,#fff);
+    font-size: 14px;
+    text-align: center;
+}
+.logosdatos,.dartosbtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+}
+img{
+    vertical-align: middle;
+}
+.dartosbtn {
+    width: 120px;
+    height: 36px;
+    background-color: #fa0043;
+    background-color: var(--token-eff61df6-31e2-4b91-a80b-18b8e7fa3de2,#fa0043);
+
+    border: none;
+    color: #fff;
+    color: var(--token-dcfc1000-f350-494d-bd15-7f017b76226e,#fff);
+    font-size: 14px;
+}

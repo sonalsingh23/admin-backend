@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.loginfrm{
+    background-color: #10142c;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+        position: fixed;
+}
+.padding-top{
+    padding-top: 74px;
+    margin: 0;
+  
+}
+.login{
+    padding-top: 0;
+    padding-bottom: 99px;
+    margin: auto!important;
+    max-width: 60%;
+    padding: 0;
+}
+
+.form{
+    margin: 0 auto;
+    width: 50%;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.dartoavtar{
+    color: #23354d;
+    text-align: center;
+    padding-bottom: 13px;
+}
+.images{
+    width: 99px;
+    border-radius: 99px;
+    border: 2px solid #23354d;
+
+}
+img {
+    vertical-align: middle;
+}
+/* .paddingto{
+    padding-top: 18px;
+} */
+.left{
+    align-items: center;
+    float: left;
+    font-size: 14px;
+    color: rgb(120, 144, 161);
+    display: flex;
+}
+.input{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.right{
+    float: right;
+    font-size: 14px;
+    color: rgb(250, 0, 67);
+}
+.frogt{
+    color: white;
+    text-decoration: none;
+}
+.signupfrm{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 27px;
+}
+.signup{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 540px){
+.login{
+    max-width: 100%;
+
+}
+.form{
+    width: 90%;
+}
+}

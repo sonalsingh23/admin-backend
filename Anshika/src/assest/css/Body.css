@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bpdycolor{
+    background-color: #10142c;
+    width: 100%;
+}
