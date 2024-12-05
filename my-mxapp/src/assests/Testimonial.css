@@ -1,0 +1,39 @@
+.container {
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .testimonial {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .testimonial:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px auto;
+  }
+  
+  .text-9 {
+    font-size: 1.5rem;
+  }
+  
+  .heading-separator-line {
+    height: 2px;
+    width: 50px;
+    margin: 10px auto;
+    background-color: #BE2583;
+  }
+  
+  
+  
+  
+  

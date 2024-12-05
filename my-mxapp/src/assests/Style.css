@@ -1,0 +1,93 @@
+/* Navbar */
+.navHeader.sticky {
+  position: sticky;
+  top: 0; 
+  width: 100%;
+  z-index: 2;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.head {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  cursor: pointer; /* Adds a pointer cursor for buttons */
+  position: relative;
+  color: #252b33;
+    height: 70px;
+    padding: 0 .85em;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.head:hover {
+  color: #BE2583;
+}
+
+
+
+
+/* Pricing */
+.shadow-md {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-bg-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .text-bg-primary {
+    background-color:#BE2583;
+  }
+  
+  .text-bg-warning {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .list-style-2 li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .fas {
+    color: #28a745; /* Change icon color */
+  }
+  
+  .fas.fa-times {
+    color: #dc3545; /* Red for unavailable features */
+  }
+
+  /* Features */
+  .featured-box-icon{
+    border-radius: 50% !important;
+    width: 15%;
+    padding: 10px;
+    
+  }
+
+  /* Promo */
+ .youtube{
+  display: flex;
+  justify-content: center;
+  
+ }
+
+/* Footer */
+ .f-link a{
+color: white;
+ }
+.f-link a:hover{
+  color: #BE2583;
+   }
+   
+   .last a{
+    color: white;
+
+   }
+   .last a:hover{
+    color: #BE2583;
+   }
+  
+  
