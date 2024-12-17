@@ -1,22 +1,25 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import CardComponent from './CardComponent'; // Ensure this is correctly defined
 
-function CardList() {
+import Cards from './Cards';
+
+const CardList = () => {
   const cardList = useSelector((state) => state.Cards.CardList);
+ 
 
-  if (!cardList || cardList.length === 0) {
-    return <p>No cards available. Please wait...</p>; 
-  }
+ 
 
   return (
     <div>
-      {cardList.map((card) => (
-        <CardComponent key={card.id} id={card.id} price={card.price} />
-      ))}
+      {cardList && cardList.length > 0 ? (
+        cardList.map((card) => (
+          <Cards key={card.id} id={card.id} price={card.price} image={card.image} />
+        ))
+      ) : (
+        <h4>No cards match your search.</h4>
+      )}
     </div>
   );
-}
+};
 
 export default CardList;
-

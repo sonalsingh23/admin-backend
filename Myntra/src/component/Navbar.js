@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assests/CSS/nav.css';
 import logo from '../assests/Images/logo.jpg';
 import { FcLike } from "react-icons/fc";
 import { FaShoppingCart } from "react-icons/fa";
+import { useSelector } from 'react-redux';
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ settext, text }) => {
+  const [searchtext, setsearchtext] = useState("");
+  const cartList = useSelector((state) => state.Cart.cartList);
+  const wishList = useSelector((state) => state.Cart.wishList);
+
+  const handleSearchChange = (e) => {
+    setsearchtext(e.target.value); // Update the local state
+    settext(e.target.value); // Send the updated search text to the parent
+  };
+
   return (
     <div className="container-fluid header">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid header">
           {/* Logo Section */}
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo" className="logo" />
-          </a>
+          <Link to="/Home">
+            <a className="navbar-brand" href="#">
+              <img src={logo} alt="logo" className="logo" />
+            </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -39,29 +52,39 @@ const Navbar = () => {
             </ul>
 
             {/* Search Form */}
-            <form className="d-flex me-3 search-form" role="search">
+            <form className="d-flex me-3 search-form" role="search" onSubmit={(e) => e.preventDefault()}>
               <input
                 className="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                value={searchtext}
+                onChange={handleSearchChange} // Handle search input change
               />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
+             
             </form>
 
             {/* Right Aligned Menu */}
             <ul className="navbar-nav right-section">
-              <li className="nav-item">
-                <a className="nav-link active" href="#" aria-label="Wishlist">
-                  <FcLike size={30} />
-                </a>
+              <li className="nav-item position-relative">
+                <Link to="/Wishlist" className="nav-link active" aria-label="Wishlist">
+                  <FcLike size={40} />
+                  {wishList.length > 0 && (
+                    <span className="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
+                      {wishList.length}
+                    </span>
+                  )}
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#" aria-label="Bag">
-                  <FaShoppingCart size={30} />
-                </a>
+              <li className="nav-item position-relative">
+                <Link to="/AddtoCart" className="nav-link active" aria-label="Bag">
+                  <FaShoppingCart size={40} />
+                  {cartList && cartList.length > 0 && (
+                    <span className="badge rounded-pill bg-dark position-absolute top-0 start-100 translate-middle">
+                      {cartList.length}
+                    </span>
+                  )}
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,7 +95,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
