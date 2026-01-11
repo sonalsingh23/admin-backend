@@ -11,6 +11,12 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+/* ✅ HEALTH CHECK ROUTE (VERY IMPORTANT FOR KOYEB) */
+app.get("/", (req, res) => {
+  res.status(200).send("OK");
+});
+
+/* routes */
 app.use("/api/admin", adminRoutes);
 
 const startServer = async () => {
@@ -20,7 +26,7 @@ const startServer = async () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
   } catch (err) {
-    console.error("❌ Server startup failed");
+    console.error("❌ Server startup failed:", err.message);
     process.exit(1);
   }
 };
