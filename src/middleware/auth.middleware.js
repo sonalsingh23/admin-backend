@@ -1,4 +1,6 @@
 const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+
 
 module.exports = (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -22,7 +24,8 @@ module.exports = (req, res, next) => {
     }
 
     const decoded = jwt.verify(token, secret);
-    req.admin = decoded;
+    req.auth = decoded;
+
     next();
   } catch (err) {
     if (err.name === "TokenExpiredError") {
