@@ -1,4 +1,3 @@
-// models/User.js
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
@@ -15,18 +14,24 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  resetPasswordToken: {
-  type: String,
-},
 
-resetPasswordExpires: {
-  type: Date,
-},
+  // 🔐 Password reset
+  resetPasswordToken: String,
+  resetPasswordExpires: Date,
 
+  // 🚫 User status
   isActive: {
     type: Boolean,
     default: true
+  },
+
+  // 🎮 24Game member account (IMPORTANT)
+  memberAccount: {
+    type: String,
+    unique: true,
+    sparse: true // 👈 allows existing users without this field
   }
+
 }, { timestamps: true });
 
 module.exports = mongoose.model("User", userSchema);
